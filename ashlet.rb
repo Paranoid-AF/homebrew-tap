@@ -57,11 +57,11 @@ class Ashlet < Formula
 
   def caveats
     <<~EOS
-      To enable ashlet, add this to your ~/.zshrc:
+      🐚 To enable ashlet, add this to your ~/.zshrc:
 
         source #{opt_share}/ashlet/ashlet.zsh
 
-      To start the daemon (runs automatically on login):
+      🚀 To start the daemon (runs automatically on login):
 
         brew services start ashlet
     EOS
