@@ -1,7 +1,7 @@
 class Ashlet < Formula
   desc "AI-powered shell auto-completion for Zsh"
   homepage "https://github.com/Paranoid-AF/ashlet"
-  version "0.1.0"
+  version "0.1.1"
 
   depends_on "socat"
   depends_on "jq"
