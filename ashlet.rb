@@ -1,7 +1,7 @@
 class Ashlet < Formula
   desc "AI-powered shell auto-completion for Zsh"
   homepage "https://github.com/Paranoid-AF/ashlet"
-  version "0.1.4"
+  version "0.2.0"
 
   depends_on "socat"
   depends_on "jq"
@@ -9,7 +9,7 @@ class Ashlet < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Paranoid-AF/ashlet/releases/download/v#{version}/ashlet-darwin-amd64.tar.gz"
-      sha256 "52c808650031deea5d184c53906057b195e69df827f0b82e8eb19016fca36763"
+      sha256 "891455044f95aa4b1c907c7e75f71f68d52d1654a8b7a9af6f302a3db389ea92"
 
       def install
         bin.install "ashletd"
@@ -18,7 +18,7 @@ class Ashlet < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Paranoid-AF/ashlet/releases/download/v#{version}/ashlet-darwin-arm64.tar.gz"
-      sha256 "c840915d6f30dc881f2d7b69b72a54f3eb2cbf854565118f10561c0de06626b3"
+      sha256 "2e1426ae7bd6a8e125d3cc51c41417f9844f7cbe7f5b28489aeb0acd3354c60f"
 
       def install
         bin.install "ashletd"
@@ -30,7 +30,7 @@ class Ashlet < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Paranoid-AF/ashlet/releases/download/v#{version}/ashlet-linux-amd64.tar.gz"
-      sha256 "f4c3163bb4df13e750ffdff4206d312d7e0369546ea659affadde0742bcf91d7"
+      sha256 "d51bcfdf1803bef727075410d4d39970be512569543838b7bdad97cf23c4d024"
 
       def install
         bin.install "ashletd"
@@ -39,7 +39,7 @@ class Ashlet < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Paranoid-AF/ashlet/releases/download/v#{version}/ashlet-linux-arm64.tar.gz"
-      sha256 "73e26f790ccf4d6a4beedbd879667adc662d9e0d80fca3e545e0693f6d96e516"
+      sha256 "b9cd01cb935760a55ed588ca2c6c0ad966bb664e54e021938a98a46f64c0e237"
 
       def install
         bin.install "ashletd"
